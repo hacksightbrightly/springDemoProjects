@@ -1,0 +1,19 @@
+package com.api.rest.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.api.rest.entities.Book;
+
+@RestController
+public class BookController {
+	@GetMapping("/test")
+	public Book handler() {
+		Book book =new Book();
+		book.setId(121212);
+		book.setAuthor("dwqugdqwdgyu");
+		book.setTitle("duasgdy");
+		return book;
+		
+	}
+}

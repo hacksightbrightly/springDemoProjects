@@ -1,0 +1,7 @@
+package com.api.rest.dao;
+
+import com.api.rest.entities.Book;
+
+public class BookRepo extends CrudRepository<Book,Integer>{
+	
+}

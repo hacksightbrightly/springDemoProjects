@@ -1,0 +1,24 @@
+package com.api.rest.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.api.rest.entities.Book;
+
+public class BookServices {
+	private static List<Book>b1=new ArrayList<>();
+	static {
+		b1.add(new Book(1,"hdaudh","agsuag"));
+		b1.add(new Book(2,"wdhwuh","djwbd"));
+		b1.add(new Book(3,"dgwdg","dhwdhwj"));
+	}
+	public List<Book> getAllBook() {
+		return b1;
+	}
+	public Book getBookById(int id) {
+		Book b2=new Book();
+		b2=b1.stream().filter(e->e.getId()==id).findFirst().get();
+		return b2;
+	}
+
+}

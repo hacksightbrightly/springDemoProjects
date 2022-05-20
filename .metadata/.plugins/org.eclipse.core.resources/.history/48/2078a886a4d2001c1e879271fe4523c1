@@ -1,0 +1,3 @@
+spring.datasource.name=test
+spring.datasource.url=""
+
